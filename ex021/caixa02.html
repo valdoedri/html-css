@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0px;
+        }
+
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+        nav {
+            background-color: rgb(141, 140, 140);
+            padding: 3px;
+            box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.493);
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            background: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.418);
+        }
+
+        section {
+            padding: 2px;
+        }
+
+        article {
+            background-color: lightgray;
+            padding: 5px;
+            border-radius: 15px 0px;
+        }
+        article > aside {
+            background-color: rgb(190, 190, 190);
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 4px;
+            margin: 0px;
+        }
+
+        footer > p {
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <nav>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+        </nav>
+
+    </header>
+    <main>
+        <section id="assuntos">
+            <article>
+            <h2>Notícias do Esporte</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo assumenda libero tenetur inventore at debitis, quisquam porro repellendus eum ea doloremque dicta accusamus distinctio possimus consequatur minima similique consectetur dolor!</p>
+
+            </article>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Notícias do Brasil</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda similique, minus nobis rem saepe eaque error at repudiandae voluptate maiores delectus necessitatibus optio doloremque nemo sequi ea accusantium rerum dolorum?</p>
+                <aside>
+                    <p>Artigo escrito por Fulano de Souza </p>
+                </aside>
+            </article>
+        </section>
+
+    </main>
+    <footer>
+        <p>Desenvolvido de acordo com o Curso em Video</p>
+    </footer>
+    
+</body>
+</html>
