@@ -30,7 +30,8 @@ header > p {
 }
 
 main {
-    width: 600px;
+    max-width: 600px;
+    min-width: 250px;
     min-height: 400px;
     background-color: white;
     border-radius: 15px;
