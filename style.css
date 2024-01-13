@@ -55,7 +55,6 @@ section a {
 }
 
 section a:hover {
-    text-decoration: underline;
     color: rgb(121, 121, 121);
     background-color: lightgray;
     border-radius: 5px;
