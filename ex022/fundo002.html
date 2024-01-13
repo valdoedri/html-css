@@ -3,16 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personalização Fundos 2</title>
+    <title>Alinhamento vertical horizontal</title>
     <style>
         body {
             background-image: url('imagens/wallpaper001.jpg');
             background-size: 100px 100px;
-            background-repeat: repeat;
+        }
+
+        #conteiner {
+            position: relative;
+            background-color: black;
+            height: 480px;
+            width: 600px;            
+            margin: auto;
+        }
+
+        #conteudo {
+            position: absolute;
+            background-color: silver;
+            width: 90%;
+            height: 30%;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            
         }
     </style>
 </head>
 <body>
+    <main id="conteiner">
+        <div id="conteudo"></div>
+    </main>
     
 </body>
 </html>
