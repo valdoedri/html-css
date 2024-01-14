@@ -9,18 +9,49 @@
             font-family: Arial, Helvetica, sans-serif;
         }
 
+        h1 {
+            text-align: center;
+        }
+
         table {
             width: 400px;
             border-collapse: collapse;
+            margin: auto;
+            position: relative; /* Para cabeçalho fixo */
+        }
+
+        thead > tr > th {
+            position: sticky; /* "Cola" no top */
+            top: -1px;        /* enconsta na barra superior do navegador */
+            background-color: gray; /* Mesma cor definida no cabeçalho */
+        }
+
+        caption {
+            color: white;
+            font-weight: bold;
+            background-color: black;
+            padding: 5px;
         }
 
         thead, tfoot {
             background-color: gray;
             color: white;
         }
+        /* Tabela ZEBRADA
+        tbody > tr:nth-child(2n) = aplica a cor a segunda linha (3n) (4n)...
+        tbody > tr:nth-child(odd) = aplica cor nas linhas ímpares
+        tbody > tr:nth-child(even) = aplica cor nas linhas pares
+        */
+        tbody > tr:nth-child(even) { 
+            background-color: rgb(247, 247, 247);
+        }
+
+        tbody > tr:nth-child(odd) { 
+            background-color: rgb(175, 241, 175);
+        }
 
         td, th {
-            padding: 5px;
+            padding: 8px;
             border: 1px solid black;            
         }
 
@@ -33,12 +64,14 @@
 <h1>Uso de tabelas grandes</h1>
 <!-- Anatomia da tabela
     <table> = tabela
+        <caption> = Legenda/Título da tabela
         <thead> = cabeça
             <tboby> = corpo
                 <tfoot> = pé -->
 <table>
+    <caption>População dos estados do Brasil</caption>
     <thead>
-        <th>Estado</th><th>População</th>
+        <th scope="col">Estado</th><th scope="col" style="width: 100px;">População</th>
 
     </thead>
     <tbody>
@@ -71,7 +104,7 @@
         <tr><td>Roraima</td><td class="num">636 707</td></tr>
     </tbody>
     <tfoot>
-        <tr><th>Total de habitantes</th><td class="num"><strong>203 062 512</strong></td></tr>
+        <tr><th scope="row">Total de habitantes</th><td class="num"><strong>203 062 512</strong></td></tr>
 
     </tfoot>
 </table>
