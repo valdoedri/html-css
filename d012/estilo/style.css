@@ -18,8 +18,12 @@ html, body {
     min-height: 100vh;
     background-color: darkgray;
 }
+
 header {
     background-color: black;
+    background-image: url('../imagens/header.png');
+    background-size: cover;
+    background-attachment: fixed;
     color: white;
     text-align: center;
 }
@@ -33,6 +37,7 @@ header > h1 {
 
 header > p {
     padding-bottom: 50px;
+    text-shadow: 5px black;
 }
 
 a {
