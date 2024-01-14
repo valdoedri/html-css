@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela Responsiva</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table { /* PERMITE BORDAS NORMAIS */
+            border-collapse: collapse; 
+        }
+        th, td { /* ADICIONA BORDA NAS CÉLULAS */
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        tbody tr:nth-child(even) { /* TABELA ZEBRADA */
+            background-color: lightcyan;
+        }
+
+        div#conteiner { /* DIV contendo a tabela */
+            overflow-x: auto; /* ADICIONA SCROLL TORNANDO */
+        }                     /* A TABELA RESPONSIVA      */  
+    </style>
+</head>
+<body>
+    <div id="conteiner">
+        <table>
+            <caption>Tabelas em telas pequenas</caption>
+            <thead>
+                <tr>
+                    <th>PRODUTO</th>
+                    <th>JAN</th>
+                    <th>FEV</th>
+                    <th>MAR</th>
+                    <th>ABR</th>
+                    <th>MAI</th>
+                    <th>JUN</th>
+                    <th>JUL</th>
+                    <th>AGO</th>
+                    <th>SET</th>
+                    <th>OUT</th>
+                    <th>NOV</th>
+                    <th>DEZ</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>TV 40"</td>
+                    <td>20</td>
+                    <td>21</td>
+                    <td>12</td>
+                    <td>03</td>
+                    <td>04</td>
+                    <td>98</td>
+                    <td>31</td>
+                    <td>26</td>
+                    <td>17</td>
+                    <td>70</td>
+                    <td>14</td>
+                    <td>46</td>
+                </tr>
+                <tr>
+                    <td>LIQUIDIFICADOR</td>
+                    <td>20</td>
+                    <td>21</td>
+                    <td>12</td>
+                    <td>03</td>
+                    <td>04</td>
+                    <td>98</td>
+                    <td>31</td>
+                    <td>26</td>
+                    <td>17</td>
+                    <td>70</td>
+                    <td>14</td>
+                    <td>46</td>
+                </tr>
+                <tr>
+                    <td>ASPIRADOR DE PÓ</td>
+                    <td>20</td>
+                    <td>21</td>
+                    <td>12</td>
+                    <td>03</td>
+                    <td>04</td>
+                    <td>98</td>
+                    <td>31</td>
+                    <td>26</td>
+                    <td>17</td>
+                    <td>70</td>
+                    <td>14</td>
+                    <td>46</td>
+                </tr>
+                <tr>
+                    <td>APARELHO DE SOM</td>
+                    <td>20</td>
+                    <td>21</td>
+                    <td>12</td>
+                    <td>03</td>
+                    <td>04</td>
+                    <td>98</td>
+                    <td>31</td>
+                    <td>26</td>
+                    <td>17</td>
+                    <td>70</td>
+                    <td>14</td>
+                    <td>46</td>
+                </tr>
+                <tr>
+                    <td>GELADEIRA</td>
+                    <td>20</td>
+                    <td>21</td>
+                    <td>12</td>
+                    <td>03</td>
+                    <td>04</td>
+                    <td>98</td>
+                    <td>31</td>
+                    <td>26</td>
+                    <td>17</td>
+                    <td>70</td>
+                    <td>14</td>
+                    <td>46</td>
+                </tr>
+                <tr>
+                    <td>SOFÁ DE CANTO</td>
+                    <td>20</td>
+                    <td>21</td>
+                    <td>12</td>
+                    <td>03</td>
+                    <td>04</td>
+                    <td>98</td>
+                    <td>31</td>
+                    <td>26</td>
+                    <td>17</td>
+                    <td>70</td>
+                    <td>14</td>
+                    <td>46</td>
+                </tr>
+                <tr>
+                    <td>CAMA BOX CASAL</td>
+                    <td>20</td>
+                    <td>21</td>
+                    <td>12</td>
+                    <td>03</td>
+                    <td>04</td>
+                    <td>98</td>
+                    <td>31</td>
+                    <td>26</td>
+                    <td>17</td>
+                    <td>70</td>
+                    <td>14</td>
+                    <td>46</td>
+                </tr>
+                <tr>
+                    <td>GUARDA ROUPAS</td>
+                    <td>20</td>
+                    <td>21</td>
+                    <td>12</td>
+                    <td>03</td>
+                    <td>04</td>
+                    <td>98</td>
+                    <td>31</td>
+                    <td>26</td>
+                    <td>17</td>
+                    <td>70</td>
+                    <td>14</td>
+                    <td>46</td>
+                </tr>
+                <tr>
+                    <td>CAFETEIRA</td>
+                    <td>20</td>
+                    <td>21</td>
+                    <td>12</td>
+                    <td>03</td>
+                    <td>04</td>
+                    <td>98</td>
+                    <td>31</td>
+                    <td>26</td>
+                    <td>17</td>
+                    <td>70</td>
+                    <td>14</td>
+                    <td>46</td>
+                </tr>
+                <tr>
+                    <td>MICROONDAS</td>
+                    <td>20</td>
+                    <td>21</td>
+                    <td>12</td>
+                    <td>03</td>
+                    <td>04</td>
+                    <td>98</td>
+                    <td>31</td>
+                    <td>26</td>
+                    <td>17</td>
+                    <td>70</td>
+                    <td>14</td>
+                    <td>46</td>
+                </tr>
+                <tr>
+                    <td>FOGÃO 6 BOCAS</td>
+                    <td>20</td>
+                    <td>21</td>
+                    <td>12</td>
+                    <td>03</td>
+                    <td>04</td>
+                    <td>98</td>
+                    <td>31</td>
+                    <td>26</td>
+                    <td>17</td>
+                    <td>70</td>
+                    <td>14</td>
+                    <td>46</td>
+                </tr>
+                <tr>
+                    <td>MESA DE CENTRO</td>
+                    <td>20</td>
+                    <td>21</td>
+                    <td>12</td>
+                    <td>03</td>
+                    <td>04</td>
+                    <td>98</td>
+                    <td>31</td>
+                    <td>26</td>
+                    <td>17</td>
+                    <td>70</td>
+                    <td>14</td>
+                    <td>46</td>
+                </tr>
+                <tr>
+                    <td>CRIADO MUDO</td>
+                    <td>20</td>
+                    <td>21</td>
+                    <td>12</td>
+                    <td>03</td>
+                    <td>04</td>
+                    <td>98</td>
+                    <td>31</td>
+                    <td>26</td>
+                    <td>17</td>
+                    <td>70</td>
+                    <td>14</td>
+                    <td>46</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+</body>
+</html>

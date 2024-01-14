@@ -11,22 +11,20 @@
         }
 
         #conteiner {
-            position: relative;
-            background-color: black;
-            height: 480px;
-            width: 600px;            
+            position: relative; /* declaração obrigatória no conteiner */
+            background-color: black;            
+            width: 600px;
+            height: 480px;            
             margin: auto;
         }
-
         #conteudo {
-            position: absolute;
+            position: absolute; /* declaração obrigatória no conteúdo */
             background-color: silver;
-            width: 90%;
-            height: 30%;
-            left: 50%;
+            width: 300px;
+            height: 150px;
+            left: 50%;  /* declarando "absolute" LEFT, TOP e TRANSFORM */
             top: 50%;
-            transform: translate(-50%, -50%);
-            
+            transform: translate(-50%, -50%);            
         }
     </style>
 </head>
