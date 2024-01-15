@@ -11,7 +11,20 @@
 
         table { /* PERMITE BORDAS NORMAIS */
             border-collapse: collapse; 
+            position: relative; /* Para cabeçalho fixo */
+        }       
+
+        thead > tr > th {
+            position: sticky; /* "Cola" no top */
+            top: -1px;        /* enconsta na barra superior do navegador */
+            background-color: gray; /* Mesma cor definida no cabeçalho */
         }
+
+        thead {
+            background-color: gray;
+            color: white;
+        }
+
         th, td { /* ADICIONA BORDA NAS CÉLULAS */
             border: 1px solid black;
             padding: 10px;
@@ -27,24 +40,24 @@
     </style>
 </head>
 <body>
-    <div id="conteiner">
+    <!-- <div id="conteiner"> -->
         <table>
             <caption>Tabelas em telas pequenas</caption>
             <thead>
                 <tr>
-                    <th>PRODUTO</th>
-                    <th>JAN</th>
-                    <th>FEV</th>
-                    <th>MAR</th>
-                    <th>ABR</th>
-                    <th>MAI</th>
-                    <th>JUN</th>
-                    <th>JUL</th>
-                    <th>AGO</th>
-                    <th>SET</th>
-                    <th>OUT</th>
-                    <th>NOV</th>
-                    <th>DEZ</th>
+                    <th scope="col">PRODUTO</th>
+                    <th scope="col">JAN</th>
+                    <th scope="col">FEV</th>
+                    <th scope="col">MAR</th>
+                    <th scope="col">ABR</th>
+                    <th scope="col">MAI</th>
+                    <th scope="col">JUN</th>
+                    <th scope="col">JUL</th>
+                    <th scope="col">AGO</th>
+                    <th scope="col">SET</th>
+                    <th scope="col">OUT</th>
+                    <th scope="col">NOV</th>
+                    <th scope="col">DEZ</th>
                 </tr>
             </thead>
             <tbody>
@@ -245,7 +258,7 @@
                 </tr>
             </tbody>
         </table>
-    </div>
+    <!-- </div> -->
     
 </body>
 </html>
