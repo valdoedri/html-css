@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        fieldset {
+            color: blue;
+            background-color: lightcyan;
+            border: 1px solid blue;
+            border-radius: 10px;
+            padding: 15px;
+            width: 250px;
+            margin: auto;
+        }        
+    </style>
+</head>
+<body>
+    <h1>Exemplo de pormulário</h1>
+
+    <form action="cadastro.php" method="get">
+        <fieldset> <!-- Agrupa campo do forme -->
+            <legend> Cadastro de Usuário</legend> <!-- Título do grupo -->
+        <p>
+            <label for="inome">Nome</label>
+            <input type="text" name="nome" id="inome" required maxlength="30">
+        </p>
+        <p>
+            <label for="iemail">e-Mail</label>
+            <input type="email" name="email" id="iemail" required>
+        </p>
+        <p>
+            <label for="itel">Telefone</label>
+            <input type="tel" name="tel" id="itel">
+        </p>
+        </fieldset>
+        <fieldset> <!-- Criou grupo para os botões -->
+        <p>        <!-- Podem ficar no mesmo grupo dos campos -->
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+        </fieldset>
+    </form>
+    
+</body>
+</html>
