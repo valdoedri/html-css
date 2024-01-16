@@ -19,19 +19,45 @@ body {
 }
 
 main {
-    position: relative;
+    position: relative; 
     height: 100vh;
 }
 
 section#telefone {
-    position: absolute;
+    position: absolute; /* Centraliza a section dentro da main */
     width: 311px;
     height: 627px;
 
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-
+    left: 50%; /* Centraliza a section dentro da main */
+    top: 50%;  /* Centraliza a section dentro da main */
+    transform: translate(-50%, -50%); /* Centraliza o section dentro da main */
     
     background: url('../imagens/frame-iphone.png') no-repeat;
+}
+
+iframe#tela { /* posicionando a iframe na tela do celular */
+    position: relative;
+    top: 80px;  /* posição da iframe em relação ao topo da section*/
+    left: 22px; /* posição da iframe em relação a lateral esquerda */
+    width: 268px;  /* largura do iframe */
+    height: 471px; /* Altura do iframe */
+}
+
+section#rsociais {
+    text-align: right;
+}
+
+section#rsociais img {
+    width: 50px;
+    margin: 10px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.418);
+    box-sizing: border-box; /* faz a borda "fazer parte" da imagem */
+}
+
+section#rsociais img:hover {
+    border: 2px solid  rgba(255, 255, 255, 0.486);
+    transform: translate(-3px, -3px);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.589);
+    transition-duration: .5s;
 }
