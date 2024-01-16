@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <h1>Formulário Checkbox - Radio Button</h1>
+    <form action="cadastro.php" method="get">
+
+        <fieldset>  <!-- Radio Button do mesmo grupo - devem ter mesmo NAME="" e ID diferente -->
+            <legend> Sexo </legend> 
+            <input type="radio" name="sexo" id="imasc" value="M" checked><label for="imasc">Masculino</label>
+            <input type="radio" name="sexo" id="ifemi" value="F"><label for="ifemi">Feminino</label>
+        </fieldset>
+
+        <fieldset>  <!-- CheckBox no mesmo grupo - devem ter NAME="" e ID individuais -->
+            <legend> Esportes favoritos </legend>
+            <input type="checkbox" name="cbfut" id="icbfut"> <label for="icbfut">Futebol</label> <br>
+            <input type="checkbox" name="cbbas" id="icbbas"> <label for="icbbas">Basquete</label> <br>
+            <input type="checkbox" name="cbten" id="icbten"> <label for="icbten">Tenis</label> <br>
+            <input type="checkbox" name="cbvol" id="icbvol"> <label for="icbvol">Volei</label>
+        </fieldset>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+    
+</body>
+</html>
