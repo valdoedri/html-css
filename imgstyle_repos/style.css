@@ -61,17 +61,17 @@ section p {
        
 }
 
-p#colec {
+section p#colec {
     font-size: 12px;
     color: #550202;
 }
 
 /* BOTÃO ZOOM */
-img#bt_zoom {
+section img#bt_zoom {
     transition: all 0.5s;
     cursor: pointer;
 }
-img#bt_zoom:hover {
+section img#bt_zoom:hover {
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
 }
