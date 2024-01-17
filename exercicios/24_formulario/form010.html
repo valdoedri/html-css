@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <h1>Formulário Checkbox - Radio Button</h1>
+    <form action="cadastro.php" method="get">
+        <p>
+            <label for="iano">Em que ano você nasceu? </label>
+            <input type="number" name="ano" id="iano" min="1900" max="2023"
+            oninput="CalcIdade()"> <!-- oninput executa a função CalcIdade() -->
+        </p>
+        <p> <!-- output que exibe o resultado da função CalcIdade() -->
+            <label for="iidade">Nesse ano sua idade será:</label>
+            <output nome="idade" id="iidade">0</output>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+
+    <script>
+        function CalcIdade() { // Função CalcIdade() em JavaScript
+            let atual = new Date().getFullYear() // Pega ano atual
+            iidade.innerHTML = Number(atual) - Number(iano.value) 
+        }        // Calcula "Ano Atual" - "Ano Nascimento"
+    </script>
+    
+</body>
+</html>
