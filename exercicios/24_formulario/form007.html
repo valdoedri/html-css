@@ -7,8 +7,36 @@
 </head>
 <body>
     <h1></h1>
-    
-    
+    <form action="cadastro.php" method="get">
+        <p>   <!-- ComboBox -->
+            <label for="iest">Estado</label>
+            <select name="estado" id="iest">
+            <optgroup label="Região Centro Oeste">
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="GO">Goias</option>
+                <option value="MT">Mato Grosso</option>
+            </optgroup>
+            <optgroup label="Região Sul">
+                <option value="PR">Paraná</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="SC">Santa Catarina</option>
+            </optgroup>
+            </select>
+        </p>
+        <p>   <!-- Data List -->
+            <label for="iprof">Profissão</label>
+            <input type="text" name="prof" id="iprof" list="lstprof">
+            <datalist id="lstprof">
+                <option value="ELET">Eletricista</option>
+                <option value="ENCA">Encanador</option>
+                <option value="MARC">Marceneiro</option>
+            </datalist>    
+        </p>
+        <p>   <!-- Caixa de texto -->
+            <label for="imens">Mensagem</label><br>
+            <textarea name="mens" id="imens" cols="30" rows="10">                
+            </textarea>
+        </p>    
         <p>
             <input type="submit" value="Enviar">
             <input type="reset" value="Limpar">
