@@ -28,7 +28,7 @@ section#login {
     top: 50%;
     transform: translate(-50%, -50%);
     background-color: white;
-    width: 250px;
+    width: 270px;
     height: 500px;
     border-radius: 20px;    
     overflow: hidden; /* Esconde o que ficar fora da borda */
