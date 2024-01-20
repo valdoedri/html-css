@@ -33,12 +33,15 @@ section#login {
     border-radius: 20px;    
     overflow: hidden; /* Esconde o que ficar fora da borda */
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.445);
+    transition: .3s;
+    transition-timing-function: ease;
 }
 
 section#login > div#foto {
     display: block;
     background: #5f2c82 url(../imagens/predio.jpg);
     background-size: cover;
+    background-position: center bottom;
     height: 200px;
 }
 
