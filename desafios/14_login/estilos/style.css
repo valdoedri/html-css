@@ -98,7 +98,7 @@ div.campo > label{
     display: none;
 }
 
-form > input[type=submit] {
+form > button#ilogin { /* input[type=submit]  */
     display: block;
     font-size: 1em;
     width: 100%;
@@ -110,7 +110,7 @@ form > input[type=submit] {
     cursor: pointer;
 }
 
-form > input[type=submit]:hover {
+form > button#ilogin:hover { /* input[type=submit]  */
     background-color: #397e7b;
 }
 
