@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tudo Sobre Google Glass</title>
     <link rel="stylesheet" href="_css/estilo.css">
+    <link rel="stylesheet" href="_css/form.css">
 </head>
 <script src="_javascript/funcoes.js"></script>
 <body>
@@ -27,39 +28,110 @@
     </ul>
     </nav>
 </header>
+<section id="corpo-full">
+    <article id="noticia-principal">
+        <header id="cabecalho-artigo">
+            <hgroup>
+                <h3>Fale Conosco > Contato</h3>
+                <h1>Formulário de Contato</h1>
+                <h2>por Gustavo Guanabara</h2>
+                <h3 class="direita">Atualizado em 01/Maio/2013</h3>
+            </hgroup>
+        </header>
 
-Fale Conosco > Contato
-Formulário de Contato
-por Gustavo Guanabara
-Atualizado em 01/Maio/2013
+<form action="#" oninput="calcTotal()">
+    <fieldset id="usuario">
+        <legend>Identificação do Usuário</legend>
+            <p>Nome:
+            <input type="text" name="nome" id="nome"></p>
+            <p>Senha:
+            <input type="password" name="Senha" id="senha"></p>
+            <p>E-mail:
+            <input type="email" name="email" id="email">
+            </p>
+            <fieldset id="sexo">
+                <legend>Sexo</legend>
+                <input type="radio" name="sexo" id="masc">
+                 <label for="masc">Masculino</label><br>
+                <input type="radio" name="sexo" id="femi">
+                <label for="femi">Feminino</label>
+            </fieldset>
+            <p>Data de Nascimento:
+                <input type="date" name="data" id="data"></p>
+    </fieldset>
+    
+    <fieldset id="endereco">
+        <legend>Endereço do Usuário</legend>
+            <p>Logradouro:
+            <input type="text" name="rua" id="rua"></p>
+            <p>Número:
+            <input type="number" name="numero" id="numero"></p>
+            <p>Estado:
+                <select name="Estado" id="Estado">
+                    <option value="AC">ACRE</option>
+                    <option value="AL">ALAGOAS</option>
+                    <option value="AP">AMAPÁ</option>
+                    <option value="AM">AMAZONAS</option>
+                    <option value="BA">BAHIA</option>
+                    <option value="CE">CEARA</option>
+                    <option value="ES">ESPIRITO SANTO</option>
+                    <option value="GO">GOIAS</option>
+                    <option value="MA">MARANHÃO</option>
+                    <option value="MT">MAO GROSSO</option>
+                    <option value="MS">MATO GROSSO DO SUL</option>
+                    <option value="MG">MINAS GERAIS</option>
+                    <option value="PA">PARÁ</option>
+                    <option value="PB">PARAIBA</option>
+                    <option value="PR">PARANÁ</option>
+                    <option value="PE">PERNAMBUCO</option>
+                    <option value="PI">PIAUÍ</option>
+                    <option value="RJ">RIO DE JANEIRO</option>
+                    <option value="RN">RIO GRANDE DO NORTE</option>
+                    <option value="RS">RIO GRANDE DO SUL</option>
+                    <option value="RO">RONDÔNIA</option>
+                    <option value="RR">RORAIMA</option>
+                    <option value="SC">SANTA CATARINA</option>
+                    <option value="SP">SÃO PAULO</option>
+                    <option value="SE">SERGIPE</option>
+                    <option value="TO">TOCANTINS</option>
+                </select>
+            </p>
+            <p>Cidade:
+                <input type="text" name="cidade" id="cidade"></p>
+    </fieldset>
+    
+    <fieldset id="mensagem">
+        <legend>Mensagem do Usuário</legend>
+            <p>Grau de Urgência:
+                Min.<input type="range" name="urgencia" id="urgencia" min="0" max="10" step="2">Máx.
+            </p>
+            <p>Mensagem: <textarea name="mensagem" id="mensagem" cols="45" rows="5"></textarea></p>
+    </fieldset>
+    
+    <fieldset id="pedido">
+        <legend>Quero um Google Glass</legend>
+            <p>
+                <input type="checkbox" name="ped" id="ped">
+                <label for="ped">Adquirir um Google Glass</label>
+            </p>
+            <p>
+                <label for="cor">Cor:</label>
+                <input type="color" name="cor" id="cor" value="#0000ff">
+            </p>
+            <p>
+                <label for="qtd">Quantidade:</label>
+                <input type="number" name="qtd" id="qtd">
+            </p>
+            <p>
+                <label for="preco">Preço Total: R$</label>
+                <input type="text" name="preco" id="preco" readonly>
+            </p>
+    </fieldset>
+    <p><input type="image" name="enviar" src="_imagens/botao-enviar.png"></p>   
+</form>
 
-Identificação do Usuário
-    Nome:
-    Senha:
-    E-mail:
-    Sexo:
-        - Masculino
-        - Feminino
-    Data de Nascimento:
-
-Endereço do Usuário
-    Logradouro:
-    Número:
-    Estado:
-    Cidade:
-
-Mensagem do Usuário
-    Grau de Urgência:
-    Mensagem:
-
-Quero um Google Glass
-    Gostaria de adquirir um Google Glass quando disponível
-    Cor:
-    Quantidade:
-    Preço Total: R$
-
-
-[BOTÃO ENVIAR]
+    </article>
+</section>
 
 <footer id="rodape">
     <p>
@@ -68,5 +140,15 @@ Quero um Google Glass
     </p>
     </footer>
     </div>
+
+    <script>
+        function calcTotal() {
+            var qtd = Number(window.document.getElementById('qtd').value);
+            var tot = qtd * 1450;
+            var total = window.document.getElementById('preco');
+            total.value = tot;
+        }
+
+    </script>
     </body>
     </html>
