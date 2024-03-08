@@ -57,7 +57,7 @@ header#cabecalho h2 {
 header#cabecalho {
     border-bottom: 1px solid #606060;
     height: 150px;
-    background: url(../_imagens/glass-logo-peq.jpg) no-repeat 0px 90px;
+    background: url(../imagens/glass-logo-peq.jpg) no-repeat 0px 90px;
 }
 
 figure.foto-legenda {
